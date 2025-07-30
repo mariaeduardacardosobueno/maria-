@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Flashcard</title>
+    <title>Ferramenta Interativa de Estudo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section id="container">
-            <!-- <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
-                    </div>
-                </div>
-            </article> -->
+
+    <div class="container">
+        <header class="header">
+            <h1>Ferramenta Interativa de Estudo</h1>
+        </header>
+
+        <section class="section">
+            <h2>Aprenda Novos Conceitos</h2>
+            <p>Insira o conceito que você deseja aprender e clique no botão abaixo para obter mais informações.</p>
+            <input type="text" class="input-field" id="concept" placeholder="Digite um conceito...">
+            <a href="#" class="button" id="learnButton">Aprender</a>
         </section>
-    </main>
-    <footer>
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
-    </footer>
-    <script src="app.js"></script>
-    <script src="perguntas.js"></script>
+
+        <section class="section">
+            <h2>Conceitos Recentes</h2>
+            <ul id="recentConcepts">
+                <li>Definição de Tecnologia</li>
+                <li>Princípios da Programação</li>
+                <li>História da Matemática</li>
+                <li>Física Quântica Básica</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Ferramenta Interativa de Estudo. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('learnButton').onclick = function() {
+            const concept = document.getElementById('concept').value;
+            alert("Você deseja aprender sobre: " + concept);
+            // Aqui você pode adicionar mais lógica para buscar informações sobre o conceito
+        };
+    </script>
+
 </body>
 </html>
+
+              
