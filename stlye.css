@@ -1,1 +1,101 @@
-https://vscode.dev/?vscode-lang=pt-br
+/* Reset básico para uma boa base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background: #5a67d8;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+}
+
+/* Seções */
+.section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    background: #5a67d8;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #434190;
+}
+
+/* Campo de entrada */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e8f0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
